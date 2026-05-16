@@ -1,11 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  standalone: false,
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [],
+  template: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  protected readonly title = signal('Frontend');
+  title: string = 'cv-generator-front';
 }
